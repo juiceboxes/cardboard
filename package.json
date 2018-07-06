@@ -1,5 +1,5 @@
 {
-  "name": "cardboard",
+  "name": "@juiceboxes/cardboard",
   "version": "0.0.1",
   "description": "Ultralight CSS boilerplate",
   "main": "index.js",
@@ -23,14 +23,14 @@
     "boilerplate",
     "sass"
   ],
-  "author": "ryelo",
+  "author": "https://github.com/ryelo",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/juiceboxes/cardboard/issues"
   },
   "homepage": "https://github.com/juiceboxes/cardboard#readme",
   "dependencies": {
-    "@juiceboxes/juice-grid": "0.0.1",
+    "@juiceboxes/juice-grid": "0.0.2",
     "normalize.css": "^8.0.0"
   },
   "devDependencies": {
