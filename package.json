@@ -1,0 +1,42 @@
+{
+  "name": "cardboard",
+  "version": "0.0.1",
+  "description": "Ultralight CSS boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "npm run watch",
+    "build": "npm-run-all build:*",
+    "build:normalize": "cpx node_modules/normalize.css/normalize.css dist/",
+    "build:sass": "node-sass src/cardboard.scss -o dist/",
+    "build:pug": "pug index.pug -o ./",
+    "watch": "npm-run-all --parallel watch:*",
+    "watch:sass": "npm run build:sass -- -w",
+    "watch:pug": "npm run build:pug -- -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juiceboxes/cardboard.git"
+  },
+  "keywords": [
+    "css",
+    "boilerplate",
+    "sass"
+  ],
+  "author": "ryelo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juiceboxes/cardboard/issues"
+  },
+  "homepage": "https://github.com/juiceboxes/cardboard#readme",
+  "dependencies": {
+    "@juiceboxes/juice-grid": "0.0.1",
+    "normalize.css": "^8.0.0"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "node-sass": "^4.9.1",
+    "npm-run-all": "^4.1.3",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

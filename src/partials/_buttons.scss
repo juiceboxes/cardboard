@@ -1,0 +1,58 @@
+// –– BUTTONS
+
+// Primary
+button.jb-button,button.jb-button-primary,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-flex;
+  color: $font-base;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid $primary-light;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+button.jb-button:hover,button.jb-button-primary,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button.jb-button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: $primary-dark;
+  outline: 0; 
+}
+
+// Accent
+
+button.jb-button.jb-button-accent,
+input[type="submit"].jb-button-accent,
+input[type="reset"].jb-button-accent,
+input[type="button"].jb-button-accent {
+  color: #FFF;
+  background-color: $accent;
+  border-color: $accent; 
+}
+
+button.jb-button.jb-button-accent:hover,
+input[type="submit"].jb-button-accent:hover,
+input[type="reset"].jb-button-accent:hover,
+input[type="button"].jb-button-accent:hover,
+button.jb-button.jb-button-accent:focus,
+input[type="submit"].jb-button-accent:focus,
+input[type="reset"].jb-button-accent:focus,
+input[type="button"].jb-button-accent:focus {
+  color: #FFF;
+  background-color: $accent-dark;
+  border-color: $accent-dark;
+}
