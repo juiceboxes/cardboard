@@ -2,8 +2,6 @@
 @import './node_modules/@juiceboxes/juice-grid/juice-grid.scss';
 
 // Utils
-@import 'utils/_helpers';
-@import 'utils/_queries';
 @import 'utils/_rem';
 @import 'utils/_vars';
 
@@ -13,7 +11,4 @@
 // Partials
 @import 'partials/_base';
 @import 'partials/_buttons';
-@import 'partials/_code';
-@import 'partials/_lists';
 @import 'partials/_tables';
-@import 'partials/_type';

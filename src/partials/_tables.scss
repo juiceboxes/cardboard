@@ -1,12 +1,11 @@
 // –– TABLES
-
-table { 
+table.jb-table { 
 	border-collapse: collapse;
-	thead { border-bottom: 1px solid $primary; }
+	thead { border-bottom: 1px solid $jb-gray; }
 	th {
 		text-align: left;
 		font-weight: 800;
 	}
 	th, td { padding: 10px 20px; }
-	tr:nth-of-type(even) { background: $primary; }
+	tr:nth-of-type(even) { background: $jb-gray; }
 }

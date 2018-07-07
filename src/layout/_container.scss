@@ -1,5 +1,6 @@
-.container {
-    width: 80%;
+// –– CONTAINER
+.jb-container {
+    width: $jb-container-width;
     display: block;
     margin: 0 auto;
 }

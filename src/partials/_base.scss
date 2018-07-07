@@ -1,10 +1,12 @@
 // –– BASE
-
 body {
     @include fontSize(15px);
     line-height: 1.5;
     font-weight: 400;
     font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: $font-base; 
+    color: $jb-font-base; 
 }
-  
+
+// –– LINKS
+a { color: #1EAEDB; }
+a:hover { color: #0FA0CE; }

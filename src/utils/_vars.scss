@@ -1,11 +1,28 @@
-$primary: #c7c7c7;
-$primary-light: lighten($primary, 10%);
-$primary-dark: darken($primary, 5%);
+// –– COLORS
+$jb-primary: #c7c7c7 !default;
+$jb-primary__light: lighten($jb-primary, 10%);
+$jb-primary__dark: darken($jb-primary, 5%);
 
-$accent: #33C3F0;
-$accent-light: lighten($accent, 10%);
-$accent-dark: darken($accent, 5%);
+$jb-accent: #33C3F0 !default;
+$jb-accent__light: lighten($jb-accent, 10%);
+$jb-accent__dark: darken($jb-accent, 5%);
 
-$font-base: #333;
+$jb-gray: #c7c7c7 !default;
 
-$container-width: 80%;
+$jb-font-base: #333 !default;
+
+$jb-link: #33C3F0 !default;
+$jb-link__hover: darken($jb-link, 5%);
+
+// –– WIDTHS
+$jb-container-width: 80% !default;
+
+// –– HEADERS
+$jb-max-header-size: 4.0rem !default;
+
+// –– MEDIA QUERIES
+$jb-query__xsm--size: 400px;
+$jb-query__sm--size: 576px;
+$jb-query__md--size: 768px;
+$jb-query__lg--size: 992px;
+$jb-query__xlg--size: 1200px;
