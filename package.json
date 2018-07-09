@@ -4,7 +4,7 @@
   "description": "Ultralight CSS boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test",
+    "test": "npm install && npm run build",
     "start": "npm run watch",
     "build": "npm-run-all build:*",
     "build:normalize": "cpx node_modules/normalize.css/normalize.css ./",
