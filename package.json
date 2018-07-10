@@ -1,6 +1,6 @@
 {
   "name": "@juiceboxes/cardboard",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Ultralight CSS boilerplate",
   "main": "index.js",
   "scripts": {
