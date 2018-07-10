@@ -1,3 +1,6 @@
+![Grid Size](https://img.shields.io/github/size/juiceboxes/cardboard/dist/cardboard.min.css.svg)
+![Travis](https://img.shields.io/travis/juiceboxes/cardboard.svg)
+
 # juiceboxes/cardboard
 
 Cardboard is not a UI library or framework, it's a starter kit to help you get off the ground in development.
