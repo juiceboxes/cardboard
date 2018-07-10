@@ -1,38 +1,96 @@
-# cardboard
+# juiceboxes/cardboard
+
 Cardboard is not a UI library or framework, it's a starter kit to help you get off the ground in development.
 
+Relies on [juice-grid](https://github.com/juiceboxes/juice-grid) for CSS Grid and Flexbox Grid solutions
+
 ## Installing
+
 `npm install @juiceboxes/cardboard`
 
 ### Imports
+
 Regular CSS: `@import 'node_modules/@juiceboxes/cardboard/cardboard.css'`
 
 Minified CSS: `@import 'node_modules/@juiceboxes/cardboard/cardboard.min.css'`
 
 SCSS with Variable declarations: `@import 'node_modules/@juiceboxes/cardboard/cardboard.scss'`
 
+[Normalize](https://github.com/necolas/normalize.css/): `@import 'node_modules/@juiceboxes/cardboard/normalize.css'`
+
 ## Usage
 
-###Components
+### Components
 
-Components are wrapped on the top level with a `jb-...` tag and then follows normal HTML structure.
+Components are wrapped on the top level with one element tag and then follows normal HTML structure.
 
 #### Buttons
 
 Variables:
+Colors, lighter and darker colors are based on initial color
 
-`$jb-primary` and `jb-$accent`: Colors
+`$accent`: default: `#33C3F0`
 
 Usage:
 
-* Primary: `<button class='jb-button'> Button Text </button>` or `<button class='jb-button__primary'> Button Text </button>`
+* Primary:
 
-* Accent: ``<button class='jb-button__accent'> Button Text </button>``
+```html
+<button class='button'> Button Text </button>
+<a class='button'> Anchor Button Text </button>
+<input class='button' type="submit" value="submit input"> Input Text </input>
+<input class='button' type="button" value="submit input"> Input Text </input
+```
+
+* Accent:
+
+```html
+<button class='button accent'> Accent Button Text </button>
+<a class='button accent'> Anchor Accent Button Text </button>
+<input class='button accent' type="submit" value="submit input"> Accent Submit Input Text </input>
+<input class='button accent' type="button" value="submit input"> Accent Button Input Tex </input>
+```
+
+#### Cards
+
+Variables:
+
+`$card__border-radius`: card border radius, default: `1.5px`
+
+`$card__padding`: padding for card contents, default: `15px`
+
+Usage:
+
+* Primary:
+
+```html
+<button class='button'> Button Text </button>
+<a class='button'> Anchor Button Text </button>
+<input class='button' type="submit" value="submit input"> Input Text </input>
+<input class='button' type="button" value="submit input"> Input Text </input
+```
+
+* Accent:
+
+```html
+<button class='button accent'> Accent Button Text </button>
+<a class='button accent'> Anchor Accent Button Text </button>
+<input class='button accent' type="submit" value="submit input"> Accent Submit Input Text </input>
+<input class='button accent' type="button" value="submit input"> Accent Button Input Tex </input>
+```
 
 #### Tables
+
+Variables:
+
+`$table__border-color`: border color under the thead, default: `#c7c7c7`
+
+`$table__background`: even row background color, default: `#c7c7c7`
+
 Usage:
+
 ```html
-<table class='jb-table'>
+<table class='table'>
     <thead>
         <tr>
             <th> Table Header 1 </th>
@@ -48,55 +106,63 @@ Usage:
 </table>
 ```
 
-### Layouts
-Cardboard relies on [juice-grid](https://github.com/juiceboxes/juice-grid) for the grid layout and is included with the npm install if npm config is in development mode
-
-#### Grid
-
-Variables:
-
-`$jb-grid-gutter`: spacing between grid elements, defaulted to `15px`.
+#### Code
 
 Usage:
 
-Basic
-``` html
-<div class="jb-grid">
-    <div class="jb-row">
-        <div class="jb-col-4">4 Columns</div>
-        <div class="jb-col-8">8 Columns</div>
-    </div>
-</div>
+```html
+<pre><code>.foo {
+    background: blue;
+} </code></pre>
 ```
 
-With Gutters
-``` html
-<div class="jb-grid with-gutters">
-    .
-    .
-    .
-</div>
+#### Headers/Titles
+
+Variables:
+
+`$header__font-size--max`: max size for headers, default: `4.0rem`;
+
+Usage:
+
+```html
+<h1 class='title'> h1 Title </h1>
+<h2 class='title'> h2 Title </h2>
+.
+.
+.
 ```
 
-Offsetting Columns
-``` html
-<div class="jb-grid">
-    <div class="jb-row">
-        <div class="jb-col-4 jb-push-8">4 Column span starting at column 9 (spans col 9, 10 ,11 ,12)</div>
-    </div>
-</div>
+#### Lists
+
+Usage:
+
+```html
+<li class='list'>
+    <li> List Item </li>
+    <li> List Item </li>
+    <ol class='list'>
+        <li> Nested List Item </li>
+        <li> Nested List Item </li>
+    </ol>
+</li>
 ```
+
+### Layouts
+
+Cardboard relies on [juice-grid](https://github.com/juiceboxes/juice-grid) for the grid layout and is included with the npm install -- if npm config is in development mode
 
 #### Container
+
 Should wrap page
 
 Variables:
 
-`$jb-container-width`: Width of your page. Defaulted to `80%`.
+`$container__width`: Width of your page, Default: `80%`.
 
-Usage: 
+Usage:
+
 ```html
-<div class='jb-container'>
+<div class='container'>
     .
     .
     .

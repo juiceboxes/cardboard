@@ -1,11 +1,10 @@
-// –– BUTTONS
-// Primary
-button.jb-button,button.jb-button__primary,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+button.button,
+a.button,
+input.button[type="submit"],
+input.button[type="reset"],
+input.button[type="button"] {
   display: inline-flex;
-  color: $jb-font-base;
+  color: $font__color;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -14,43 +13,48 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 5px;
-  border: 1px solid $jb-primary__light;
+  border: 1px solid $button__border-color;
   cursor: pointer;
   box-sizing: border-box;
 }
 
-button.jb-button:hover,button.jb-button__primary,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-button.jb-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
+button.button:hover,
+a.button:hover,
+input.button[type="submit"]:hover,
+input.button[type="reset"]:hover,
+input.button[type="button"]:hover,
+button.button:focus
+a.button:focus,
+input.button[type="submit"]:focus,
+input.button[type="reset"]:focus,
+input.button[type="button"]:focus {
   color: #333;
-  border-color: $jb-primary__dark;
+  border-color: $button__border-color--hover;
   outline: 0; 
 }
 
 // Accent
-button.jb-button.jb-button__accent,
-input[type="submit"].jb-button__accent,
-input[type="reset"].jb-button__accent,
-input[type="button"].jb-button__accent {
+button.button.accent,
+a.button.accent,
+input.button.accent[type="submit"].accent,
+input.button.accent[type="reset"].accent,
+input.button.accent[type="button"].accent {
   color: #FFF;
-  background-color: $jb-accent;
-  border-color: $jb-accent; 
+  background-color: $button-accent__background;
+  border-color: $button-accent__border-color; 
 }
 
-button.jb-button.jb-button__accent:hover,
-input[type="submit"].jb-button__accent:hover,
-input[type="reset"].jb-button__accent:hover,
-input[type="button"].jb-button__accent:hover,
-button.jb-button.jb-button__accent:focus,
-input[type="submit"].jb-button__accent:focus,
-input[type="reset"].jb-button__accent:focus,
-input[type="button"].jb-button__accent:focus {
+button.button.accent:hover,
+a.button.accent:hover,
+input.button.accent[type="submit"].accent:hover,
+input.button.accent[type="reset"].accent:hover,
+input.button.accent[type="button"].accent:hover,
+button.button.accent:focus,
+a.button.accent:focus,
+input.button.accent[type="submit"].accent:focus,
+input.button.accent[type="reset"].accent:focus,
+input.button.accent[type="button"].accent:focus {
   color: #FFF;
-  background-color: $jb-accent__dark;
-  border-color: $jb-accent__dark;
+  background-color: $button-accent__background--hover;
+  border-color: $button-accent__border-color--hover;
 }

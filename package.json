@@ -1,20 +1,20 @@
 {
   "name": "@juiceboxes/cardboard",
-  "version": "0.1.0",
+  "version": "0.3.3",
   "description": "Ultralight CSS boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "npm install && npm run build",
+    "test": "npm run build",
     "start": "npm run watch",
     "build": "npm-run-all build:*",
-    "build:normalize": "cpx node_modules/normalize.css/normalize.css ./",
-    "build:sass": "node-sass src/cardboard.scss -o ./",
+    "build:normalize": "uglifycss node_modules/normalize.css/normalize.css > dist/normalize.min.css",
+    "build:sass": "node-sass src/cardboard.scss -o dist/",
     "build:pug": "pug index.pug -o ./",
-    "build:ugly": "uglifycss cardboard.css > cardboard.min.css",
+    "build:ugly": "uglifycss dist/cardboard.css > dist/cardboard.min.css",
     "watch": "npm-run-all --parallel watch:*",
     "watch:sass": "npm run build:sass -- -w",
     "watch:pug": "npm run build:pug -- -w",
-    "prepublishOnly": "npm run build && cpx src/cardboard.scss ./"
+    "prepublishOnly": "npm run build && cpx \"src/**/*.scss\" dist/sass"
   },
   "repository": {
     "type": "git",
@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/juiceboxes/cardboard#readme",
   "dependencies": {
-    "@juiceboxes/juice-grid": "0.0.4",
+    "@juiceboxes/juice-grid": "0.3.1",
     "normalize.css": "^8.0.0"
   },
   "devDependencies": {

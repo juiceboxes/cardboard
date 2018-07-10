@@ -1,28 +1,51 @@
+// –––––––– GLOBALS
 // –– COLORS
-$jb-primary: #c7c7c7 !default;
-$jb-primary__light: lighten($jb-primary, 10%);
-$jb-primary__dark: darken($jb-primary, 5%);
+$standard: #c7c7c7 !default;
+$standard__light: lighten($standard, 10%) !default;
+$standard__dark: darken($standard, 5%) !default;
 
-$jb-accent: #33C3F0 !default;
-$jb-accent__light: lighten($jb-accent, 10%);
-$jb-accent__dark: darken($jb-accent, 5%);
+$accent: #33C3F0 !default;
+$accent__light: lighten($accent, 10%) !default;
+$accent__dark: darken($accent, 5%) !default;
 
-$jb-gray: #c7c7c7 !default;
+$font__color: #333 !default;
 
-$jb-font-base: #333 !default;
+$link__color: #33C3F0 !default;
+$link__color--hover: darken($link__color, 5%) !default;
 
-$jb-link: #33C3F0 !default;
-$jb-link__hover: darken($jb-link, 5%);
 
-// –– WIDTHS
-$jb-container-width: 80% !default;
-
-// –– HEADERS
-$jb-max-header-size: 4.0rem !default;
-
+// –––––––– LAYOUTS
 // –– MEDIA QUERIES
-$jb-query__xsm--size: 400px;
-$jb-query__sm--size: 576px;
-$jb-query__md--size: 768px;
-$jb-query__lg--size: 992px;
-$jb-query__xlg--size: 1200px;
+$jb-query__xsm--size: 400px !default;
+$jb-query__sm--size: 576px !default;
+$jb-query__md--size: 768px !default;
+$jb-query__lg--size: 992px !default;
+$jb-query__xlg--size: 1200px !default;
+
+// –– CONTAINERS
+$container__width: 80% !default;
+
+
+// –––––––– PARTIALS
+// –– GLOBAL
+$TABLE__GLOBAL: #c7c7c7 !default;
+
+// –– BUTTONS
+$button__border-color: $standard !default;
+$button__border-color--hover: $standard__dark !default;
+
+$button-accent__background: $accent !default;
+$button-accent__border-color: $accent !default;
+$button-accent__background--hover: $accent__dark !default;
+$button-accent__border-color--hover: $accent__dark !default;
+
+// –– CARD
+$card__border-radius: 1.5px !default;
+$card__padding: 15px !default;
+
+// –– TABLES
+$table__border-color: $TABLE__GLOBAL !default;
+$table__background: $TABLE__GLOBAL !default;
+
+// –– TYPE
+$header__font-size--max: 4.0rem !default;

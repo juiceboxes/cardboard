@@ -1,3 +1,5 @@
 src/
 .travis.yml
 index.pug
+index.html
+normalize.css

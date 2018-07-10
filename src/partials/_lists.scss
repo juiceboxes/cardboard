@@ -1,19 +1,13 @@
-// –– LISTS
-ul.jb-list { list-style: circle inside; }
-ol.jb-list { list-style: decimal inside; }
-ol.jb-list, ul.jb-list {
+ul.list { list-style: circle inside; }
+ol.list { list-style: decimal inside; }
+ol.list, ul.list {
     padding-left: 0;
     margin-top: 0;
 }
 
-ul.jb-list ul,
-ul.jb-list ol,
-ol.jb-list ol,
-ol.jb-list ul {
+ul.list ul, ul.list ol, ol.list ol, ol.list ul {
     margin: 1.5rem 0 1.5rem 3rem;
     font-size: 90%;
 }
 
-.jb-list li {
-    margin-bottom: 1rem;
-}
+li.list { margin-bottom: 1rem; }

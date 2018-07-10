@@ -1,4 +1,3 @@
-// –– MEDIA QUERIES
 @mixin jb-xsm { @media (min-width: #{$jb-query__xsm--size} ) { @content; } }
 @mixin jb-sm { @media (min-width: #{$jb-query__sm--size} ) { @content; } }
 @mixin jb-md { @media (min-width: #{$jb-query__md--size} ) { @content; } }
